@@ -68,4 +68,13 @@ grab the import code and add it in the index.css
 
 
 Day #2 
-- Added Github repo 
+- Created the main News Component that will house all subcomponents
+- Added and configured Tailwind CSS.
+- Started on main Categories Navbar using map()
+
+Day #3
+- Created new Github repo and uploded all files to remote repo
+- Updating the data.js object structure. Added Hero icons and a fake dummy news data for testing. Will replace it with real API points later. 
+- Used map() for news-grid-items. 
+
+
