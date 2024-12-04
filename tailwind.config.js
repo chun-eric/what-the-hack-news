@@ -7,6 +7,7 @@ export default {
         sans: ["Kanit", "sans-serif"],
         bebas: ["Bebas Neue", "cursive"],
         comfortaa: ["Comfortaa", "cursive"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

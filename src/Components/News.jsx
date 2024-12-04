@@ -17,7 +17,9 @@ const News = () => {
   return (
     <div className='news-app'>
       <div className='news-header'>
-        <h1 className='logo'>News App</h1>
+        <h1 className='logo'>
+          What The Hack_<span className=''>News</span>
+        </h1>
       </div>
       <div className='news-content'>
         <nav className='navbar'>
@@ -25,11 +27,13 @@ const News = () => {
           <div className='categories'>
             {menuData.map((menu) => (
               <a key={menu.id} href='#' className='nav-link'>
-                <span className='icon'>
-                  {/* render as an menu icon component when wrapped in < /> */}
-                  <menu.icon className='h-5 w-5' />
-                </span>
-                <span>{menu.category}</span>
+                <div key={menu.id} className='category'>
+                  <span className='icon'>
+                    {/* render as an menu icon component when wrapped in < /> */}
+                    <menu.icon className='h-5 w-5' />
+                  </span>
+                  <span>{menu.category}</span>
+                </div>
               </a>
             ))}
           </div>

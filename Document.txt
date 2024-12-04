@@ -76,5 +76,10 @@ Day #3
 - Created new Github repo and uploded all files to remote repo
 - Updating the data.js object structure. Added Hero icons and a fake dummy news data for testing. Will replace it with real API points later. 
 - Used map() for news-grid-items. 
+- The main difficulty was structuring our data objects in data.js
 
+
+Day #4
+- Styling our News Component with Tailwind css. 
+- Fixing styling issues
 
