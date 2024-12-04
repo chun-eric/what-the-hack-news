@@ -302,7 +302,7 @@ footer {
   padding: 2rem 2rem;
   background-color: #eeeeee;
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   z-index: 4;
   flex-direction: column;
