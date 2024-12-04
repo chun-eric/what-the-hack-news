@@ -68,7 +68,7 @@ const News = () => {
         </nav>
         <div className='news-section'>
           {/* Headline */}
-          <h1 className='news-heading'>Trending News</h1>
+          <h1 className='section-heading'>Trending News</h1>
           <div className='headline'>
             <img src={getCategoryImage("Nation")} alt='Headline Image' />
             <h2 className='headline-title'>
@@ -77,7 +77,8 @@ const News = () => {
             </h2>
           </div>
           {/* news grid including 6 news items*/}
-          <h1 className=''>In Other News</h1>
+          <div className='spacer'></div>
+          <h1 className='section-heading'>In Other News</h1>
           <div className='news-grid'>
             {dummyNewsData.map((newsItem) => (
               <div key={newsItem.id} className='news-grid-item'>
@@ -90,8 +91,9 @@ const News = () => {
               </div>
             ))}
           </div>
+          <div className='spacer'></div>
           <div className=''>
-            <h1>Business</h1>
+            <h1 className='section-heading'>Business</h1>
           </div>
         </div>
         <div className='trending-section'>
