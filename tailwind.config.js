@@ -9,6 +9,10 @@ export default {
         comfortaa: ["Comfortaa", "cursive"],
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        royalBlue: "#408dff",
+        royalBlack: "#111214",
+      },
     },
   },
   plugins: [],
