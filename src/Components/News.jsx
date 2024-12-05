@@ -1,6 +1,7 @@
 import menuData, { dummyNewsData, businessNewsData } from "../data.js";
 import { Avatar } from "@material-tailwind/react";
 import Trending from "../Components/trending/Trending.jsx";
+import Header from "../Components/header/Header.jsx";
 
 const News = () => {
   const currentYear = new Date().getFullYear();
@@ -22,39 +23,8 @@ const News = () => {
 
   return (
     <div className='news-app'>
-      <div className='news-header'>
-        <h1 className='logo'>What_The_Hack</h1>
-
-        <div className='py-0 px-[1rem] flex w-3/4 '>
-          <div className='relative flex justify-center w-full'>
-            <input
-              id='search'
-              className=' w-3/4  pl-6 pr-12 h-14 border rounded-full focus:outline-none focus:ring-1 focus:ring-[royalBlack] '
-              type='text'
-              placeholder='Search...'
-              value={""}
-            />
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 24 24'
-              fill='currentColor'
-              className='absolute text-gray-400 -translate-y-1/2 pointer-events-none w-7 h-7 right-4 top-1/2'
-            >
-              <path
-                fillRule='evenodd'
-                d='M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z'
-                clipRule='evenodd'
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div className='news-header-right'>
-          <button className='sign-in'>Sign In</button>
-          <button className='subscribe'>Subscribe</button>
-        </div>
-      </div>
-
+      {/* Header */}
+      <Header />
       <div className='news-content'>
         <nav className='navbar'>
           <h1 className='nav-heading'>Categories</h1>
