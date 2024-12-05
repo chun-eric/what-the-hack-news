@@ -19,6 +19,7 @@ import sportsImg from "./assets/images/sports.jpg";
 import scienceImg from "./assets/images/science.jpg";
 import healthImg from "./assets/images/health.jpg";
 import nationImg from "./assets/images/nation.jpg";
+import police from "./assets/images/police.jpg";
 
 // Nav Menu data
 const menuData = [
@@ -113,4 +114,57 @@ export const dummyNewsData = [
     category: "Business",
     title: "Tech startup receives record-breaking investment",
   },
+];
+
+export const businessNewsData = [
+  {
+    id: 1,
+    category: "Business",
+    title: "Major corporation announces new sustainability initiative",
+    image: police,
+    author: "J Dilla",
+    dateAdded: "2024-12-01",
+    snippet:
+      "A major corporation has announced a new initiative to enhance sustainability efforts across all of its global operations.",
+  },
+  {
+    id: 2,
+    category: "Business",
+    title: "Local startup launches innovative financial product",
+    image: police,
+    author: "Jay Shakur",
+    dateAdded: "2024-12-02",
+    snippet:
+      "A local startup has introduced an innovative financial product aimed at helping consumers manage their expenses more efficiently.",
+  },
+  {
+    id: 3,
+    category: "Business",
+    title: "New partnership announced between two industry leaders",
+    image: police,
+    author: "Dru Cole",
+    dateAdded: "2024-12-03",
+    snippet:
+      "Two major industry leaders have announced a strategic partnership aimed at expanding their market reach and fostering innovation.",
+  },
+  {
+    id: 4,
+    category: "Business",
+    title: "Small businesses adapt to changing market trends",
+    image: police,
+    author: "Michael Jackson",
+    dateAdded: "2024-12-04",
+    snippet:
+      "Small businesses are finding new ways to adapt to the rapidly changing market trends, focusing on digital transformation and customer engagement.",
+  },
+  // {
+  //   id: 5,
+  //   category: "Business",
+  //   title: "Economic outlook report highlights growth opportunities",
+  //   image: police,
+  //   author: "Emily Davis",
+  //   dateAdded: "2024-12-05",
+  //   snippet:
+  //     "The latest economic outlook report highlights key growth opportunities for businesses in the coming year, emphasizing technology and sustainability.",
+  // },
 ];

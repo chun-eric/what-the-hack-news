@@ -42,10 +42,10 @@ body {
 }
 
 .news-app {
-  width: 100vw;
+  width: 100%;
   /* width: clamp(35rem, 90cqi, 100rem); */
   height: 100%;
-  background-color: #ffffff; /*#07080a*/
+  background-color: #fcfcfc; /*#07080a*/
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -58,7 +58,7 @@ body {
   width: 100%;
   min-height: 8rem;
   border-radius: 1rem 1rem 0 0;
-  background-color: #fafafa; /*#111214*/
+  background-color: #ececec; /*#111214*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,19 +102,20 @@ body {
 .news-content {
   display: flex;
   column-gap: 1rem;
-  height: calc(
-    100% - 16rem
-  ); /* news header is 7 rem, footer is 5 rem, top and bottom of news content is 2rem each so 16 rem*/
+  width: 80%;
+  height: calc(100% - 16rem);
+  margin: 0 auto;
+  /* news header is 7 rem, footer is 5 rem, top and bottom of news content is 2rem each so 16 rem*/
   padding: 2rem;
 }
 
 .navbar {
-  width: 12%;
+  width: 20%;
   height: 100%;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   color: #111214;
   border-right: 1px solid #dddddd;
 }
@@ -130,7 +131,7 @@ body {
 .categories {
   display: flex;
   flex-direction: column;
-  row-gap: 1.8rem;
+  row-gap: 1.5rem;
   color: #0f1011;
   font-family: "Inter";
   font-size: 0.95rem;
@@ -156,7 +157,9 @@ body {
 } */
 
 .news-section {
-  width: 76%;
+  width: 75%;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -172,7 +175,7 @@ body {
 
 .headline {
   width: 100%;
-  height: calc(45% - 2rem);
+  height: calc(25% - 2rem);
   border-radius: 1rem;
   mix-blend-mode: 2rem;
   position: relative;
@@ -293,6 +296,27 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: medium;
   letter-spacing: 0.1rem;
+}
+
+/* business section */
+.business-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.business-left-section {
+  width: 45%;
+}
+
+.business-left-image {
+  border-radius: 0.6rem;
+}
+
+.business-right-section {
+  width: 45%;
 }
 
 footer {

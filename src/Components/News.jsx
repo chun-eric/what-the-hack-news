@@ -1,7 +1,9 @@
-import menuData, { dummyNewsData } from "../data.js";
+import menuData, { dummyNewsData, businessNewsData } from "../data.js";
+import { Avatar } from "@material-tailwind/react";
 
 const News = () => {
   const currentYear = new Date().getFullYear();
+
   // function to dynamically get category image
   function getCategoryImage(category) {
     const menuItem = menuData.find(
@@ -13,6 +15,9 @@ const News = () => {
     // otherwise, return first image as default.
     return menuItem?.image || menuData[0].image;
   }
+
+  // Extract the first item from businessNewsData
+  const firstBusinessNews = businessNewsData[0];
 
   return (
     <div className='news-app'>
@@ -68,7 +73,7 @@ const News = () => {
         </nav>
         <div className='news-section'>
           {/* Headline */}
-          <h1 className='section-heading'>Trending News</h1>
+          <h1 className='section-heading'>Breaking News</h1>
           <div className='headline'>
             <img src={getCategoryImage("Nation")} alt='Headline Image' />
             <h2 className='headline-title'>
@@ -78,7 +83,7 @@ const News = () => {
           </div>
           {/* news grid including 6 news items*/}
           <div className='spacer'></div>
-          <h1 className='section-heading'>In Other News</h1>
+          <h1 className='section-heading'>Top Stories</h1>
           <div className='news-grid'>
             {dummyNewsData.map((newsItem) => (
               <div key={newsItem.id} className='news-grid-item'>
@@ -91,16 +96,62 @@ const News = () => {
               </div>
             ))}
           </div>
+
+          {/* business section */}
           <div className='spacer'></div>
-          <div className=''>
-            <h1 className='section-heading'>Business</h1>
+          <h1 className='section-heading'>Business</h1>
+          <div className='business-section'>
+            <div className='business-left-section'>
+              <img
+                className='business-left-image'
+                src={firstBusinessNews.image}
+                alt='business image'
+              />
+              <div className='flex gap-2 align-center justify-between items-center '>
+                <div className='flex gap-2 mt-4 items-center'>
+                  <Avatar
+                    variant='circular'
+                    style={{ width: "40px", height: "40px" }}
+                    alt={firstBusinessNews.author}
+                    className='border-2 rounded-full border-white hover:z-10 focus:z-10'
+                    src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80'
+                  />
+                  <p className='text-sm'>{firstBusinessNews.author}</p>
+                  <span className='h-1 w-1 bg-gray-400 rounded-full inline-block'></span>
+                  <p className='text-sm text-gray-800 '>
+                    {firstBusinessNews.category}
+                  </p>
+                </div>
+                <div className='flex items-center mt-4'>
+                  <p className='text-xs text-gray-400 items-center'>
+                    {firstBusinessNews.dateAdded}
+                  </p>
+                </div>
+              </div>
+              <h3 className='mt-5 font-bold text-black text-lg'>
+                {firstBusinessNews.title}
+              </h3>
+              <p className='line-clamp-2 text-sm text-gray-400 pt-2'>
+                {firstBusinessNews.snippet}
+              </p>
+            </div>
+            <div className='business-right-section'>
+              <div className=''>
+                <div className=''>
+                  <img src='' alt='' />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        {/* Trending section */}
         <div className='trending-section'>
           <div className=''>
-            <h1 className='trending-heading'>Latest News</h1>
+            <h1 className='trending-heading'>Latest </h1>
           </div>
         </div>
+
         <footer>
           <p className='copyright'>What_The_Hack</p>
           <p className=''>
