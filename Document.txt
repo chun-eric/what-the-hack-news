@@ -84,4 +84,5 @@ Day #4
 - Fixing styling issues
 - Added Latest news Section
 - Reformated Nav with search bar and sign subscribe button
+- Adding
 

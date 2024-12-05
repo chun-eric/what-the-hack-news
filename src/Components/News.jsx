@@ -100,7 +100,7 @@ const News = () => {
           {/* business section */}
           <div className='spacer'></div>
           <h1 className='section-heading'>Business</h1>
-          <div className='business-section'>
+          <div className='business-section w-full flex gap-2'>
             <div className='business-left-section'>
               <img
                 className='business-left-image'
@@ -135,12 +135,46 @@ const News = () => {
                 {firstBusinessNews.snippet}
               </p>
             </div>
-            <div className='business-right-section'>
-              <div className=''>
-                <div className=''>
-                  <img src='' alt='' />
+            {/*** right section */}
+            <div className='business-right-section space-x-2 '>
+              {businessNewsData.slice(1).map((newsItem) => (
+                <div
+                  key={newsItem.id}
+                  className='flex flex-col w-full mb-4  pb-4 border-b '
+                >
+                  <div className='flex flex-row gap-4 align-center'>
+                    <img
+                      className='w-1/3 rounded-[0.6rem] object-cover'
+                      src={newsItem.image}
+                      alt='business image'
+                    />
+                    <h3 className='w-2/3 mt-5 font-bold text-black text-lg'>
+                      {newsItem.title}
+                    </h3>
+                  </div>
+                  <div className='flex gap-2 align-center justify-between items-center  '>
+                    <div className='flex gap-2 mt-4 items-center '>
+                      <Avatar
+                        variant='circular'
+                        style={{ width: "40px", height: "40px" }}
+                        alt={newsItem.author}
+                        className='border-2 rounded-full border-white hover:z-10 focus:z-10'
+                        src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80'
+                      />
+                      <p className='text-sm'>{newsItem.author}</p>
+                      <span className='h-1 w-1 bg-stone-950 rounded-full inline-block'></span>
+                      <p className='text-sm text-gray-800 '>
+                        {newsItem.category}
+                      </p>
+                    </div>
+                    <div className='flex items-center mt-4'>
+                      <p className='text-xs text-gray-400 items-center'>
+                        {newsItem.dateAdded}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

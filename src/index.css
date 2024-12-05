@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .section-heading {
@@ -308,7 +308,7 @@ body {
 }
 
 .business-left-section {
-  width: 45%;
+  width: 50%;
 }
 
 .business-left-image {
@@ -316,7 +316,8 @@ body {
 }
 
 .business-right-section {
-  width: 45%;
+  width: 50%;
+  
 }
 
 footer {
