@@ -1,16 +1,18 @@
 const Header = () => {
   return (
-    <div className='bg-gray-200 '>
+    <div className='w-full border-b '>
       <div className='flex items-center justify-between w-full px-24 min-h-32'>
-        <h1 className='w-[12%] font-["Bebas_Neue"] text-4xl text-gray-900 tracking-wider'>
-          What_The_Hack
-        </h1>
+        <div className='w-[12%]'>
+          <h1 className='font-["Bebas_Neue"] text-4xl text-gray-900 tracking-wider'>
+            What_The_Hack
+          </h1>
+        </div>
 
-        <div className='py-0 px-[1rem] flex w-3/4 '>
-          <div className='relative flex justify-center w-full'>
+        <div className='py-0 px-[1rem] flex w-[60%] items-center justify-center'>
+          <div className='relative flex items-center justify-center max-w-[600px] w-full'>
             <input
               id='search'
-              className=' w-3/4  pl-6 pr-12 h-14 border rounded-full focus:outline-none focus:ring-1 focus:ring-[royalBlack] '
+              className='w-full pl-6 pr-12 h-12 border rounded-full focus:outline-none focus:ring-1 focus:ring-[royalBlack]'
               type='text'
               placeholder='Search...'
               value={""}
@@ -19,7 +21,7 @@ const Header = () => {
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
               fill='currentColor'
-              className='absolute text-gray-400 -translate-y-1/2 pointer-events-none w-7 h-7 right-4 top-1/2'
+              className='absolute w-6 h-6 text-gray-400 -translate-y-1/2 pointer-events-none right-4 top-1/2'
             >
               <path
                 fillRule='evenodd'
@@ -35,7 +37,7 @@ const Header = () => {
             Sign In
           </button>
           <button className='p-3 px-4 text-base font-bold text-white bg-blue-500 rounded-lg'>
-            Subscribe
+            Register
           </button>
         </div>
       </div>

@@ -86,3 +86,8 @@ Day #4
 - Reformated Nav with search bar and sign subscribe button
 - Adding
 
+
+
+Day #5 
+- Fix the search bar
+- Split Home Page into different Components
