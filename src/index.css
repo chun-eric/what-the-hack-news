@@ -31,18 +31,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    145deg,
-    #b4e7ff 0%,
-    /* light blue */ #87ceeb 60%,
-    /* sky blue */ #ffb347 30%,
-    /* soft orange */ #53ceff 80%,
-    /* back to sky blue */ #20b8ff 100% /* light blue */
-  );
-}
-
-.news-app {
-  /* width: clamp(35rem, 90cqi, 100rem); */
+ 
 }
 
 .navbar {

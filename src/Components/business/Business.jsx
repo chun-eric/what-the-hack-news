@@ -15,7 +15,7 @@ const Business = () => {
   const firstBusinessNews = businessNewsData[0];
 
   return (
-    <div className='px-6'>
+    <div className='mt-4'>
       <div className='spacer'></div>
       <h1 className='section-heading'>Business</h1>
       <div className='flex w-full  gap-4 h-[500px] mb-6'>

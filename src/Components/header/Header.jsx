@@ -1,14 +1,8 @@
 const Header = () => {
   return (
-    <div className='w-full border-b '>
-      <div className='flex items-center justify-between w-full px-24 min-h-32'>
-        <div className='w-[12%]'>
-          <h1 className='font-["Bebas_Neue"] text-4xl text-gray-900 tracking-wider'>
-            What_The_Hack
-          </h1>
-        </div>
-
-        <div className='py-0 px-[1rem] flex w-[60%] items-center justify-center'>
+    <div className='w-full mt-10'>
+      <div className='flex items-center justify-between w-full px-24 min-h-30'>
+        <div className='py-0 px-[1rem] flex w-[20%] items-center justify-center'>
           <div className='relative flex items-center justify-center max-w-[600px] w-full'>
             <input
               id='search'
@@ -32,7 +26,13 @@ const Header = () => {
           </div>
         </div>
 
-        <div className=' w-[12%] flex items-center justify-center gap-5 text-gray-900'>
+        <div className='flex items-center justify-center flex-1 w-full'>
+          <h1 className='font-["Bebas_Neue"] text-4xl text-gray-900 tracking-wider'>
+            What_The_Hack
+          </h1>
+        </div>
+
+        <div className=' w-[20%] flex items-center justify-center gap-5 text-gray-900'>
           <button className='text-base font-bold text-gray-900 rounded-lg'>
             Sign In
           </button>

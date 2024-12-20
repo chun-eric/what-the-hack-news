@@ -25,49 +25,49 @@ import police from "./assets/images/police.jpg";
 const menuData = [
   {
     id: 1,
-    category: "General",
+    category: "Top Stories",
     image: defaultImg,
     icon: NewspaperIcon,
   },
   {
     id: 2,
-    category: "World",
+    category: "Trending",
     image: worldImg,
     icon: GlobeEuropeAfricaIcon,
   },
   {
     id: 3,
-    category: "Business",
+    category: "World",
     image: defaultImg,
     icon: BuildingOfficeIcon,
   },
   {
     id: 4,
-    category: "Technology",
+    category: "Markets",
     image: techImg,
     icon: ComputerDesktopIcon,
   },
   {
     id: 5,
-    category: "Entertainment",
+    category: "Opinion",
     image: entertainmentImg,
     icon: FilmIcon,
   },
   {
     id: 6,
-    category: "Sports",
+    category: "Lifestyle",
     image: sportsImg,
     icon: TrophyIcon,
   },
   {
     id: 7,
-    category: "Science",
+    category: "Health",
     image: scienceImg,
     icon: BeakerIcon,
   },
   {
     id: 8,
-    category: "Health",
+    category: "Games",
     image: healthImg,
     icon: HeartIcon,
   },
@@ -82,7 +82,6 @@ const menuData = [
 export default menuData;
 
 // Dummy news data for testing grid items
-
 export const dummyNewsData = [
   {
     id: 1,
@@ -96,12 +95,12 @@ export const dummyNewsData = [
   },
   {
     id: 3,
-    category: "Entertainment",
+    category: "Lifestyle",
     title: "Anticipated blockbuster breaks box office records",
   },
   {
     id: 4,
-    category: "Science",
+    category: "Audio",
     title: "Scientists discover new species in deep ocean expedition",
   },
   {
@@ -111,7 +110,7 @@ export const dummyNewsData = [
   },
   {
     id: 6,
-    category: "Business",
+    category: "Markets",
     title: "Tech startup receives record-breaking investment",
   },
 ];
