@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import AudioPage from "./Pages/AudioPage";
 import OpinionPage from "./Pages/OpinionPage";
 import MarketsPage from "./Pages/MarketsPage";
-import LifestylePage from "./Pages/LifeStylePage";
+import LifeStylePage from "./Pages/LifeStylePage";
 import HealthPage from "./Pages/HealthPage";
 import GamesPage from "./Pages/GamesPage";
 import TechnologyPage from "./Pages/TechnologyPage";
@@ -60,7 +60,7 @@ const App = () => {
               <Route path='/audio' element={<AudioPage />} />
               <Route path='/opinion' element={<OpinionPage />} />
               <Route path='/markets' element={<MarketsPage />} />
-              <Route path='/lifestyle' element={<LifestylePage />} />
+              <Route path='/lifestyle' element={<LifeStylePage />} />
               <Route path='/health' element={<HealthPage />} />
               <Route path='/games' element={<GamesPage />} />
               <Route path='/technology' element={<TechnologyPage />} />
