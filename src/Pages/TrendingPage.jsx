@@ -1,6 +1,4 @@
-import React from "react";
-
-const Trending = () => {
+const TrendingPage = () => {
   return (
     <div>
       <h1>Trending</h1>
@@ -13,4 +11,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default TrendingPage;

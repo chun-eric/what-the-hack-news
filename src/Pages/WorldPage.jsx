@@ -1,6 +1,4 @@
-import React from "react";
-
-const World = () => {
+const WorldPage = () => {
   return (
     <div>
       <h1>World</h1>
@@ -14,4 +12,4 @@ const World = () => {
   );
 };
 
-export default World;
+export default WorldPage;

@@ -1,6 +1,4 @@
-import React from "react";
-
-const TopStories = () => {
+const TopStoriesPage = () => {
   return (
     <div>
       <h1>Top Stories</h1>
@@ -13,4 +11,4 @@ const TopStories = () => {
   );
 };
 
-export default TopStories;
+export default TopStoriesPage;

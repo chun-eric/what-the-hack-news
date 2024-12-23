@@ -1,6 +1,4 @@
-import React from "react";
-
-const Technology = () => {
+const TechnologyPage = () => {
   return (
     <div>
       <h1>Technology</h1>
@@ -14,4 +12,4 @@ const Technology = () => {
   );
 };
 
-export default Technology;
+export default TechnologyPage;

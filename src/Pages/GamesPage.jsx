@@ -1,6 +1,4 @@
-
-
-const Games = () => {
+const GamesPage = () => {
   return (
     <div>
       <h1>Games</h1>
@@ -14,4 +12,4 @@ const Games = () => {
   );
 };
 
-export default Games;
+export default GamesPage;

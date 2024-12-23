@@ -1,9 +1,7 @@
-import React from "react";
-
-const Health = () => {
+const HealthPage = () => {
   return (
     <div>
-      <h1>Health</h1>
+      <h1>HealthPage</h1>
       <ul>
         <li>Medical news</li>
         <li>Wellness tips</li>
@@ -14,4 +12,4 @@ const Health = () => {
   );
 };
 
-export default Health;
+export default HealthPage;

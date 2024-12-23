@@ -1,6 +1,4 @@
-import React from "react";
-
-const Opinion = () => {
+const OpinionPage = () => {
   return (
     <div>
       <h1>Opinion</h1>
@@ -14,4 +12,4 @@ const Opinion = () => {
   );
 };
 
-export default Opinion;
+export default OpinionPage;

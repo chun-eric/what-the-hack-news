@@ -1,6 +1,4 @@
-import React from "react";
-
-const Audio = () => {
+const AudioPage = () => {
   return (
     <div>
       <h1>Audio Podcasts</h1>
@@ -14,4 +12,4 @@ const Audio = () => {
   );
 };
 
-export default Audio;
+export default AudioPage;

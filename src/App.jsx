@@ -3,21 +3,21 @@ import HeaderHoriztonal from "./Components/headerHorizontal/HeaderHoriztonal";
 import Footer from "./Components/footer/Footer";
 
 import Home from "./Pages/Home";
-import Trending from "./Pages/Trending";
-import Audio from "./Pages/Audio";
-import Opinion from "./Pages/Opinion";
-import Markets from "./Pages/Markets";
-import Lifestyle from "./Pages/Lifestyle";
-import Health from "./Pages/Health";
-import Games from "./Pages/Games";
-import Technology from "./Pages/Technology";
-import TopStories from "./Pages/TopStories";
-import World from "./Pages/World";
+import AudioPage from "./Pages/AudioPage";
+import OpinionPage from "./Pages/OpinionPage";
+import MarketsPage from "./Pages/MarketsPage";
+import LifestylePage from "./Pages/LifeStylePage";
+import HealthPage from "./Pages/HealthPage";
+import GamesPage from "./Pages/GamesPage";
+import TechnologyPage from "./Pages/TechnologyPage";
 
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import LoginPage from "./Pages/LoginPage";
+import TopStoriesPage from "./Pages/TopStoriesPage";
+import TrendingPage from "./Pages/TrendingPage";
+import WorldPage from "./Pages/WorldPage";
 
 const App = () => {
   const location = useLocation();
@@ -56,16 +56,16 @@ const App = () => {
           >
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/trending' element={<Trending />} />
-              <Route path='/audio' element={<Audio />} />
-              <Route path='/opinion' element={<Opinion />} />
-              <Route path='/markets' element={<Markets />} />
-              <Route path='/lifestyle' element={<Lifestyle />} />
-              <Route path='/health' element={<Health />} />
-              <Route path='/games' element={<Games />} />
-              <Route path='/technology' element={<Technology />} />
-              <Route path='/topstories' element={<TopStories />} />
-              <Route path='/world' element={<World />} />
+              <Route path='/trending' element={<TrendingPage />} />
+              <Route path='/audio' element={<AudioPage />} />
+              <Route path='/opinion' element={<OpinionPage />} />
+              <Route path='/markets' element={<MarketsPage />} />
+              <Route path='/lifestyle' element={<LifestylePage />} />
+              <Route path='/health' element={<HealthPage />} />
+              <Route path='/games' element={<GamesPage />} />
+              <Route path='/technology' element={<TechnologyPage />} />
+              <Route path='/topstories' element={<TopStoriesPage />} />
+              <Route path='/world' element={<WorldPage />} />
               <Route path='/login' element={<LoginPage />} />
             </Routes>
           </div>

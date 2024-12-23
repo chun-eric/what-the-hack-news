@@ -1,4 +1,4 @@
-const LifeStyle = () => {
+const LifeStylePage = () => {
   return (
     <div>
       <h1>Lifestyle</h1>
@@ -12,4 +12,4 @@ const LifeStyle = () => {
   );
 };
 
-export default LifeStyle;
+export default LifeStylePage;

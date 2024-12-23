@@ -22,7 +22,7 @@ const News = () => {
   // const firstBusinessNews = businessNewsData[0];
 
   return (
-    <div className='flex flex-col w-full  bg-[#ffffff]  overflow-y-auto'>
+    <div className='flex flex-col w-full  bg-[#ffffff]  '>
       <div className='flex justify-center w-full bg-[#ffffff]'>
         <div className='container mx-auto max-w-7xl'>
           <div className='flex flex-col justify-center w-full lg:flex-row'>
