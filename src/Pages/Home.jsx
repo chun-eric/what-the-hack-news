@@ -26,10 +26,9 @@ const News = () => {
     <div className='flex flex-col w-full  bg-[#fcfcfc]  overflow-y-auto'>
       <div className='flex justify-center w-full bg-gray-50'>
         <div className='container mx-auto max-w-7xl'>
-          {/* Side News Categories  */}
           <div className='flex justify-center '>
             {/* Middle News Section */}
-            <div className='flex flex-col w-full h-full gap-4 px-6 '>
+            <div className='flex flex-col w-full h-full gap-4 px-5 '>
               <div className='w-full news-section'>
                 {/* Headline */}
                 <h1 className='pb-1 mt-3 section-heading'>Breaking News</h1>

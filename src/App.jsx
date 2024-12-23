@@ -21,16 +21,16 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div className='flex flex-col min-h-screen'>
+      <Analytics />
       {/* Header */}
       <div className='w-full'>
         <Header />
         <HeaderHoriztonal />
-        <Analytics />
       </div>
 
       {/* Routes */}
       <div className='w-full'>
-        <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+        <div className='px-4 sm:px-[3vw] md:px-[4vw] lg:px-[5vw]'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/trending' element={<Trending />} />

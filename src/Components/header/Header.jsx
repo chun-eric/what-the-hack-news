@@ -1,9 +1,12 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className='w-full mt-10'>
-      <div className='flex items-center justify-between w-full px-24 min-h-30'>
-        <div className='py-0 px-[1rem] flex w-[20%] items-center justify-center'>
-          <div className='relative flex items-center justify-center max-w-[600px] w-full'>
+      <div className='flex items-center justify-center w-full px-1 sm:px-3 lg:px-24 min-h-30'>
+        <div className='py-0  flex w-[25%]  lg:w-[35%] xl:w-[30%] items-center justify-start px-3 sm:px-8 md:px-12 lg:pl-0 '>
+          <div className='relative lg:flex items-center justify-start max-w-[600px] w-full hidden '>
             <input
               id='search'
               className='w-full pl-6 pr-12 h-12 border rounded-full focus:outline-none focus:ring-1 focus:ring-[royalBlack]'
@@ -24,21 +27,72 @@ const Header = () => {
               />
             </svg>
           </div>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='#333'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='#000'
+            className='flex items-center justify-start size-7 lg:hidden'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z'
+            />
+          </svg>
         </div>
 
         <div className='flex items-center justify-center flex-1 w-full'>
-          <h1 className='font-["Bebas_Neue"] text-4xl text-gray-900 tracking-wider'>
-            What_The_Hack
-          </h1>
+          <Link to='/'>
+            <h1 className='font-["Bebas_Neue"] md:text-4xl text-gray-900 tracking-wider cursor-pointer flex items-center mt-2 text-[1.4rem] sm:text-3xl'>
+              What_The_Hack
+            </h1>
+          </Link>
         </div>
 
-        <div className=' w-[20%] flex items-center justify-center gap-5 text-gray-900'>
-          <button className='text-base font-bold text-gray-900 rounded-lg'>
-            Sign In
-          </button>
-          <button className='p-3 px-4 text-base font-bold text-white bg-blue-500 rounded-lg'>
-            Register
-          </button>
+        <div className=' w-[30%] flex items-center justify-end gap-6 text-gray-900 cursor-pointer'>
+          <Link to='/login'>
+            <button className='hidden p-3 px-4 text-base font-bold text-gray-900 rounded-lg lg:inline-flex'>
+              Sign In
+            </button>
+          </Link>
+          <Link>
+            <button className='hidden p-3 px-4 text-base font-bold text-white bg-blue-500 rounded-lg lg:inline-flex'>
+              Register
+            </button>
+          </Link>
+          <Link to='/login'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={1.5}
+              stroke='currentColor'
+              className='px-2 cursor-pointer size-12 lg:hidden'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+              />
+            </svg>
+          </Link>
+          {/* 
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='currentColor'
+            className='cursor-pointer size-8 lg:hidden'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M3.75 9h16.5m-16.5 6.75h16.5'
+            />
+          </svg> */}
         </div>
       </div>
     </div>

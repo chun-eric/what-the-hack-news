@@ -91,3 +91,11 @@ Day #4
 Day #5 
 - Fix the search bar
 - Split Home Page into different Components
+
+
+Day #6
+- reduce width of logo
+- give more width to right buttons
+- make search bar bigger 
+- Figure out Hover Mega Menu
+- Fix body 
