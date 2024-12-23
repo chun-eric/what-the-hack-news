@@ -36,7 +36,11 @@ const App = () => {
 
       {/* Routes */}
       <div className='w-full'>
-        <div className='px-4 sm:px-[3vw] md:px-[4vw] lg:px-[5vw]'>
+        <div
+          className={
+            !isLoginPage ? `px-4 sm:px-[3vw] md:px-[4vw] lg:px-[5vw]` : ""
+          }
+        >
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/trending' element={<Trending />} />

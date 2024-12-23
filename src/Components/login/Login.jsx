@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className='max-w-[500px] mx-auto  h-auto mt-20 flex flex-col'>
+    <div className='max-w-[480px] mx-auto  h-auto mt-20 flex flex-col px-4 '>
       <h1 className='mb-6 text-2xl font-bold text-center font-inter'>
         Log in or create an account
       </h1>
