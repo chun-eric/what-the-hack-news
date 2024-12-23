@@ -1,8 +1,8 @@
-import menuData, { dummyNewsData, businessNewsData } from "../data.js";
+import menuData, { dummyNewsData } from "../data.js";
 import Trending from "../Components/trending/Trending.jsx";
 import Header from "../Components/header/Header.jsx";
 import Business from "../Components/business/Business.jsx";
-import HeaderHoriztonal from "../Components/headerHorizontal/HeaderHoriztonal.jsx";
+// import HeaderHoriztonal from "../Components/headerHorizontal/HeaderHoriztonal.jsx";
 
 const News = () => {
   const currentYear = new Date().getFullYear();

@@ -16,17 +16,23 @@ import World from "./Pages/World";
 
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import LoginPage from "./Pages/LoginPage";
 
 const App = () => {
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/login";
+
   return (
     <div className='flex flex-col min-h-screen'>
       <Analytics />
       {/* Header */}
-      <div className='w-full'>
-        <Header />
-        <HeaderHoriztonal />
-      </div>
+      {!isLoginPage && (
+        <div className='w-full'>
+          <Header />
+          <HeaderHoriztonal />
+        </div>
+      )}
 
       {/* Routes */}
       <div className='w-full'>
@@ -43,15 +49,18 @@ const App = () => {
             <Route path='/technology' element={<Technology />} />
             <Route path='/topstories' element={<TopStories />} />
             <Route path='/world' element={<World />} />
+            <Route path='/login' element={<LoginPage />} />
           </Routes>
         </div>
       </div>
 
-      <div className='w-full'>
-        <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-          <Footer />
+      {!isLoginPage && (
+        <div className='w-full'>
+          <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+            <Footer />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
