@@ -94,8 +94,9 @@ Day #5
 
 
 Day #6
-- reduce width of logo
-- give more width to right buttons
-- make search bar bigger 
+- reduce width of logo - done
+- give more width to right buttons - done
+- make search bar bigger - done
 - Figure out Hover Mega Menu
-- Fix body 
+- Fix footer issue - it keeps being fixed at the bottom - done. Solution - we have absolute position we needed to get rid of from the footer.
+ - Added login/register page - done

@@ -93,7 +93,6 @@ const Business = () => {
           ))}
         </div>
       </div>
-      ;
     </div>
   );
 };

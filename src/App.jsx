@@ -24,47 +24,61 @@ const App = () => {
   const isLoginPage = location.pathname === "/login";
 
   return (
-    <div className='flex flex-col min-h-screen'>
-      <Analytics />
-      {/* Header */}
-      {!isLoginPage && (
-        <div className='w-full'>
-          <Header />
-          <HeaderHoriztonal />
-        </div>
-      )}
+    <div className='w-full min-h-screen bg-[#ffffff]'>
+      <div className='flex flex-col items-center w-full'>
+        {!isLoginPage && (
+          <>
+            {/* Full width for top header */}
+            <div className='w-full'>
+              <div className='max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
+                <Header />
+              </div>
+            </div>
 
-      {/* Routes */}
-      <div className='w-full'>
-        <div
-          className={
-            !isLoginPage ? `px-4 sm:px-[3vw] md:px-[4vw] lg:px-[5vw]` : ""
-          }
-        >
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/trending' element={<Trending />} />
-            <Route path='/audio' element={<Audio />} />
-            <Route path='/opinion' element={<Opinion />} />
-            <Route path='/markets' element={<Markets />} />
-            <Route path='/lifestyle' element={<Lifestyle />} />
-            <Route path='/health' element={<Health />} />
-            <Route path='/games' element={<Games />} />
-            <Route path='/technology' element={<Technology />} />
-            <Route path='/topstories' element={<TopStories />} />
-            <Route path='/world' element={<World />} />
-            <Route path='/login' element={<LoginPage />} />
-          </Routes>
-        </div>
-      </div>
+            {/* Full width navigation bar */}
+            <div className='w-full '>
+              <div className='max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-10'>
+                <HeaderHoriztonal />
+              </div>
+            </div>
+          </>
+        )}
 
-      {!isLoginPage && (
-        <div className='w-full'>
-          <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-            <Footer />
+        {/* Routes */}
+        <main className='flex-1 w-full'>
+          <Analytics />
+          <div
+            className={
+              !isLoginPage
+                ? `max-w-[1440px] mx-auto px-4 sm:px-[3vw] lg:px-[4vw]`
+                : ""
+            }
+          >
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/trending' element={<Trending />} />
+              <Route path='/audio' element={<Audio />} />
+              <Route path='/opinion' element={<Opinion />} />
+              <Route path='/markets' element={<Markets />} />
+              <Route path='/lifestyle' element={<Lifestyle />} />
+              <Route path='/health' element={<Health />} />
+              <Route path='/games' element={<Games />} />
+              <Route path='/technology' element={<Technology />} />
+              <Route path='/topstories' element={<TopStories />} />
+              <Route path='/world' element={<World />} />
+              <Route path='/login' element={<LoginPage />} />
+            </Routes>
           </div>
-        </div>
-      )}
+        </main>
+
+        {!isLoginPage && (
+          <footer className='w-full bg-[#eeeeee]'>
+            <div className='max-w-[1440px] mx-auto px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+              <Footer />
+            </div>
+          </footer>
+        )}
+      </div>
     </div>
   );
 };

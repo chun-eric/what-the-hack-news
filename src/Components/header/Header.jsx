@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -57,7 +56,7 @@ const Header = () => {
               Sign In
             </button>
           </Link>
-          <Link>
+          <Link to='/login'>
             <button className='hidden p-3 px-4 text-base font-bold text-white bg-blue-500 rounded-lg lg:inline-flex'>
               Register
             </button>

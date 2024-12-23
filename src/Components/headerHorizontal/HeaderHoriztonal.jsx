@@ -2,9 +2,9 @@ import menuData from "../../data";
 
 const HeaderHoriztonal = () => {
   return (
-    <div className='invisible lg:visible w-full border-b block min-h-[1.5rem]'>
+    <div className='invisible lg:visible w-full border-b  min-h-[1.5rem] flex items-center justify-center '>
       <aside className=' flex justify-center p-6  text-[#0f1011] font-inter text-[0.85rem] '>
-        <nav className='flex gap-8 '>
+        <nav className='flex xl:gap-12 lg:gap-8 '>
           {menuData.map((menu) => (
             <a key={menu.id} href='#' className='nav-link'>
               <div

@@ -1,11 +1,10 @@
 import menuData, { dummyNewsData } from "../data.js";
 import Trending from "../Components/trending/Trending.jsx";
-import Header from "../Components/header/Header.jsx";
+// import Header from "../Components/header/Header.jsx";
 import Business from "../Components/business/Business.jsx";
-// import HeaderHoriztonal from "../Components/headerHorizontal/HeaderHoriztonal.jsx";
 
 const News = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   // function to dynamically get category image
   function getCategoryImage(category) {
@@ -23,14 +22,15 @@ const News = () => {
   // const firstBusinessNews = businessNewsData[0];
 
   return (
-    <div className='flex flex-col w-full  bg-[#fcfcfc]  overflow-y-auto'>
-      <div className='flex justify-center w-full bg-gray-50'>
+    <div className='flex flex-col w-full  bg-[#ffffff]  overflow-y-auto'>
+      <div className='flex justify-center w-full bg-[#ffffff]'>
         <div className='container mx-auto max-w-7xl'>
-          <div className='flex justify-center '>
+          <div className='flex flex-col justify-center w-full lg:flex-row'>
             {/* Middle News Section */}
-            <div className='flex flex-col w-full h-full gap-4 px-5 '>
+            <div className='flex flex-col lg:w-[75%] h-full gap-4 lg:px-5 w-full px-1'>
+              {/* Date and Weather */}
               <div className='w-full news-section'>
-                {/* Headline */}
+                {/* Breaking Headline News */}
                 <h1 className='pb-1 mt-3 section-heading'>Breaking News</h1>
                 <div className='w-full h-full headline '>
                   <img
@@ -45,7 +45,7 @@ const News = () => {
                 </div>
                 {/* news grid including 6 news items*/}
                 <div className='spacer'></div>
-                <h1 className='mt-6 section-heading'>Top Stories</h1>
+                <h1 className='mt-10 section-heading'>Top Stories</h1>
                 <div className='grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3'>
                   {dummyNewsData.map((newsItem) => (
                     <div
@@ -71,7 +71,9 @@ const News = () => {
             </div>
 
             {/* Right Trending section */}
-            <Trending />
+            <div className='w-[25%] '>
+              <Trending />
+            </div>
           </div>
         </div>
       </div>
