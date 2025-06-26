@@ -1,27 +1,28 @@
-import Header from "./Components/header/Header";
-import HeaderHoriztonal from "./Components/headerHorizontal/HeaderHoriztonal";
-import Footer from "./Components/footer/Footer";
+import Header from './Components/header/Header'
+import HeaderHoriztonal from './Components/headerHorizontal/HeaderHoriztonal'
+import Footer from './Components/footer/Footer'
 
-import Home from "./Pages/Home";
-import AudioPage from "./Pages/AudioPage";
-import OpinionPage from "./Pages/OpinionPage";
-import MarketsPage from "./Pages/MarketsPage";
-import LifeStylePage from "./Pages/LifeStylePage";
-import HealthPage from "./Pages/HealthPage";
-import GamesPage from "./Pages/GamesPage";
-import TechnologyPage from "./Pages/TechnologyPage";
+import Home from './Pages/Home'
+import AudioPage from './Pages/AudioPage'
+import OpinionPage from './Pages/OpinionPage'
+import MarketsPage from './Pages/MarketsPage'
+import LifeStylePage from './Pages/LifeStylePage'
+import HealthPage from './Pages/HealthPage'
+import GamesPage from './Pages/GamesPage'
+import TechnologyPage from './Pages/TechnologyPage'
 
-import "./index.css";
-import { Analytics } from "@vercel/analytics/react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import LoginPage from "./Pages/LoginPage";
-import TopStoriesPage from "./Pages/TopStoriesPage";
-import TrendingPage from "./Pages/TrendingPage";
-import WorldPage from "./Pages/WorldPage";
+import './index.css'
+import { Analytics } from '@vercel/analytics/react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import LoginPage from './Pages/LoginPage'
+import TopStoriesPage from './Pages/TopStoriesPage'
+// import TrendingPage from './Pages/TrendingPage'
+import WorldPage from './Pages/WorldPage'
+import LatestPage from './Pages/LatestPage'
 
 const App = () => {
-  const location = useLocation();
-  const isLoginPage = location.pathname === "/login";
+  const location = useLocation()
+  const isLoginPage = location.pathname === '/login'
 
   return (
     <div className='w-full min-h-screen bg-[#ffffff]'>
@@ -51,18 +52,18 @@ const App = () => {
             className={
               !isLoginPage
                 ? `max-w-[1440px] mx-auto px-4 sm:px-[3vw] lg:px-[4vw]`
-                : ""
+                : ''
             }
           >
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/trending' element={<TrendingPage />} />
+              <Route path='/latest' element={<LatestPage />} />
               <Route path='/audio' element={<AudioPage />} />
               <Route path='/opinion' element={<OpinionPage />} />
               <Route path='/markets' element={<MarketsPage />} />
               <Route path='/lifestyle' element={<LifeStylePage />} />
               <Route path='/health' element={<HealthPage />} />
-              <Route path='/games' element={<GamesPage />} />
+              {/* <Route path='/games' element={<GamesPage />} /> */}
               <Route path='/technology' element={<TechnologyPage />} />
               <Route path='/topstories' element={<TopStoriesPage />} />
               <Route path='/world' element={<WorldPage />} />
@@ -80,7 +81,7 @@ const App = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

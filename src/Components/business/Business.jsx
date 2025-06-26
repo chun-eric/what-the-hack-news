@@ -1,4 +1,4 @@
-import { businessNewsData } from "../../data.js";
+import { businessNewsData } from '../../data.js'
 
 const Business = () => {
   // const currentYear = new Date().getFullYear();
@@ -12,10 +12,10 @@ const Business = () => {
   // }
 
   // Extract the first item from businessNewsData
-  const firstBusinessNews = businessNewsData[0];
+  const firstBusinessNews = businessNewsData[0]
 
   return (
-    <div className='mt-4'>
+    <div className='mt-4 mb-8'>
       <div className='spacer'></div>
       <h1 className='section-heading'>Business</h1>
       <div className='flex w-full  gap-4 h-[500px] mb-6'>
@@ -55,7 +55,7 @@ const Business = () => {
         </div>
         {/*** right section */}
         <div className='space-x-2 w-[50%] h-[500px]  '>
-          {businessNewsData.slice(1).map((newsItem) => (
+          {businessNewsData.slice(1).map(newsItem => (
             <div
               key={newsItem.id}
               className='flex flex-col w-full pb-4 mb-4 border-b h-1/3 last:border-b-0 '
@@ -94,7 +94,7 @@ const Business = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Business;
+export default Business

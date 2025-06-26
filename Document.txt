@@ -101,7 +101,7 @@ Day #6
 - Fix footer issue - it keeps being fixed at the bottom - done. Solution - we have absolute position we needed to get rid of from the footer.
  - Added login/register page - done
  - trending section horizontal and vertical scrollbar showing -- Solution = git rid of overflow-y-auto from Home page parent container also added overflow-x-hidden on the body in the index.css file too. 
-- Deployment error to Vercel - 
+- Deployment error to Vercel - solution due to spelling error of the component. 
 
 
 Day #7 

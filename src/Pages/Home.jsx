@@ -1,21 +1,23 @@
-import menuData, { dummyNewsData } from "../data.js";
-import Trending from "../Components/trending/Trending.jsx";
+import menuData, { dummyNewsData } from '../data.js'
+// import Trending from "../Components/trending/Trending.jsx";
 // import Header from "../Components/header/Header.jsx";
-import Business from "../Components/business/Business.jsx";
+import Business from '../Components/business/Business.jsx'
+import Latest from '../Components/latest/Latest.jsx'
+import AudioNews from '../Components/audioNews/AudioNews.jsx'
 
 const News = () => {
   // const currentYear = new Date().getFullYear();
 
   // function to dynamically get category image
-  function getCategoryImage(category) {
+  function getCategoryImage (category) {
     const menuItem = menuData.find(
-      (menu) => menu.category.toLowerCase() === category.toLowerCase()
-    );
+      menu => menu.category.toLowerCase() === category.toLowerCase()
+    )
     // console.log(menuItem);
 
     // if menuItem exists, return menuItem.image (optional chaining)
     // otherwise, return first image as default.
-    return menuItem?.image || menuData[0].image;
+    return menuItem?.image || menuData[0].image
   }
 
   // Extract the first item from businessNewsData
@@ -35,7 +37,7 @@ const News = () => {
                 <div className='w-full h-full headline '>
                   <img
                     className='object-cover w-full h-[400px] rounded-[0.6rem] '
-                    src={getCategoryImage("Nation")}
+                    src={getCategoryImage('Nation')}
                     alt='Headline Image'
                   />
                   <h2 className='headline-title'>
@@ -47,7 +49,7 @@ const News = () => {
                 <div className='spacer'></div>
                 <h1 className='mt-10 section-heading'>Top Stories</h1>
                 <div className='grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3'>
-                  {dummyNewsData.map((newsItem) => (
+                  {dummyNewsData.map(newsItem => (
                     <div
                       key={newsItem.id}
                       className='relative w-full h-full rounded-lg cursor-pointer news-grid-item min-h-60'
@@ -72,13 +74,14 @@ const News = () => {
 
             {/* Right Trending section */}
             <div className='w-[25%] '>
-              <Trending />
+              <Latest />
+              <AudioNews />
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default News;
+export default News
