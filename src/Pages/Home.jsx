@@ -5,6 +5,7 @@ import Business from '../Components/business/Business.jsx'
 import Latest from '../Components/latest/Latest.jsx'
 import AudioNews from '../Components/audioNews/AudioNews.jsx'
 import Opinion from '../Components/opinion/Opinion.jsx'
+import MarketTicker from '../Components/marketTicker/marketTicker.jsx'
 
 const News = () => {
   // const currentYear = new Date().getFullYear();
@@ -75,6 +76,7 @@ const News = () => {
               {/* Business section */}
               <Business />
               <Opinion />
+              <MarketTicker />
             </div>
 
             {/* Right Trending section */}
