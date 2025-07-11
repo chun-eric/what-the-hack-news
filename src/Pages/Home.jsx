@@ -5,7 +5,7 @@ import Business from '../Components/business/Business.jsx'
 import Latest from '../Components/latest/Latest.jsx'
 import AudioNews from '../Components/audioNews/AudioNews.jsx'
 import Opinion from '../Components/opinion/Opinion.jsx'
-import MarketTicker from '../Components/marketTicker/marketTicker.jsx'
+import MarketTicker from '../Components/marketTicker/MarketTicker.jsx'
 
 const News = () => {
   // const currentYear = new Date().getFullYear();
@@ -33,7 +33,7 @@ const News = () => {
             {/* Middle News Section */}
             <div className='flex flex-col h-full w-[75%] border-r-[#686868]  border-r border-b mx-auto border-l border-l-[#686868] '>
               {/* Date and Weather */}
-              <div className='w-full news-section   pb-8 flex flex-col px-4'>
+              <div className='flex flex-col w-full px-4 pb-8 news-section'>
                 {/* Breaking Headline News */}
                 <div className=''>
                   <h1 className='pb-1 mt-3 section-heading'>Breaking News</h1>
