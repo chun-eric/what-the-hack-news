@@ -38,7 +38,7 @@ const App = () => {
 
             {/* Full width navigation bar */}
             <div className='w-full '>
-              <div className='max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-10'>
+              <div className='max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10'>
                 <HeaderHoriztonal />
               </div>
             </div>
