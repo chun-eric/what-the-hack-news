@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
               className='w-full pl-6 pr-12 h-12 border rounded-full focus:outline-none focus:ring-1 focus:ring-[royalBlack]'
               type='text'
               placeholder='Search...'
-              value={""}
+              value={''}
             />
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -50,9 +50,9 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className=' w-[30%] flex items-center justify-end gap-6 text-gray-900 cursor-pointer'>
+        <div className=' w-[30%] flex items-center justify-end gap-3 text-gray-900 cursor-pointer'>
           <Link to='/login'>
-            <button className='hidden p-3 px-4 text-base font-bold text-gray-900 rounded-lg lg:inline-flex'>
+            <button className='hidden p-3 px-4 text-base font-bold text-gray-900 rounded-lg lg:inline-flex border border-black hover:bg-black transition-colors hover:text-white'>
               Sign In
             </button>
           </Link>
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

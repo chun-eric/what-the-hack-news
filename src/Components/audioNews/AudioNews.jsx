@@ -3,7 +3,7 @@ import AudioPlayer from '../audioplayer/AudioPlayer'
 
 const AudioNews = () => {
   return (
-    <div className='max-w-md p-4 bg-white border-[#696969] border-b border-l border-r'>
+    <div className='max-w-md p-4 bg-white border-[#696969] border-b border-t'>
       {/* audio controls and player */}
       <div className='my-4'>
         <h2 className='font-bold'>

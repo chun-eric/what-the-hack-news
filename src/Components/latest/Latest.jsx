@@ -46,8 +46,8 @@ const Latest = () => {
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   return (
-    <div className='overflow-x-hidden overflow-y-hidden w-full min-h-screen  flex flex-col gap-8 text-[#111214]  mt-6 border-l border-b pb-2 border-r border-[#686868]  '>
-      <div className='h-full lg:px-7 lg:border-l'>
+    <div className='overflow-x-hidden overflow-y-hidden w-full min-h-screen  flex flex-col gap-8 text-[#111214]  mt-6  border-b pb-2   '>
+      <div className='h-full lg:px-7 '>
         <div className='flex items-center justify-between mb-8 '>
           <h1 className='lg:text-2xl font-["Bebas_Neue"] font-medium tracking-[0.1rem] self-start text-3xl'>
             Latest
