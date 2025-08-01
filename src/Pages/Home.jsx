@@ -6,6 +6,7 @@ import Latest from '../Components/latest/Latest.jsx'
 import AudioNews from '../Components/audioNews/AudioNews.jsx'
 import Opinion from '../Components/opinion/Opinion.jsx'
 import MarketTicker from '../Components/marketTicker/MarketTicker.jsx'
+import CryptoDashboard from '../Components/cryptoDashboard/CryptoDashboard.jsx'
 
 const News = () => {
   // const currentYear = new Date().getFullYear();
@@ -76,7 +77,7 @@ const News = () => {
               {/* Business section */}
               <Business />
               <Opinion />
-              <MarketTicker />
+              <CryptoDashboard/>
             </div>
 
             {/* Right Trending section */}

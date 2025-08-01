@@ -19,12 +19,16 @@ import TopStoriesPage from './Pages/TopStoriesPage'
 // import TrendingPage from './Pages/TrendingPage'
 import WorldPage from './Pages/WorldPage'
 import LatestPage from './Pages/LatestPage'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+
+const queryClient = new QueryClient()
 
 const App = () => {
   const location = useLocation()
   const isLoginPage = location.pathname === '/login'
 
   return (
+    <QueryClientProvider client={queryClient}>
     <div className='w-full min-h-screen bg-[#ffffff]'>
       <div className='flex flex-col items-center w-full'>
         {!isLoginPage && (
@@ -81,6 +85,7 @@ const App = () => {
         )}
       </div>
     </div>
+    </QueryClientProvider>
   )
 }
 
